@@ -1,0 +1,10 @@
+%tr
+	%td#link_to_monkey
+		%h4= monkey_button(monkey)
+	%td#link_to_best_friend
+		%h5= monkey_button(monkey.best_friend)
+	%td#buttons
+		.sharing_button
+			.typical_stuff
+				= googs_button(monkey)
+				= googs_button(monkey.best_friend)

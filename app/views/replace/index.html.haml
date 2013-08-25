@@ -1,0 +1,6 @@
+%h1 Cache Replace
+
+%table
+  = render partial: 'shared/header'
+  - @monkeys.each do |monkey|
+    = render partial: 'monkey', locals: {monkey: monkey}
