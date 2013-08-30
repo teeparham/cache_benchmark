@@ -1,5 +1,5 @@
 module ApplicationHelper
-  include CacheReplace
+  include CacheRocket
 
   def monkey_button(monkey)
     return unless monkey
