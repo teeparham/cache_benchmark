@@ -1,0 +1,9 @@
+%h1 Cache Rocket Collection
+
+%table
+  = render partial: 'shared/header'
+  = render_cached 'monkey', collection: @monkeys,
+  replace: {monkey_button: ->(m){monkey_button(m)},
+  monkey_friend_button: ->(m){monkey_button(m.best_friend)},
+  googs_buttons: ->(m){googs_button(m)+googs_button(m.best_friend)}}
+
