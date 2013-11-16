@@ -32,7 +32,7 @@ GEM
       actionpack (>= 3.2)
     dalli (2.6.4)
     erubis (2.7.0)
-    haml (4.0.3)
+    haml (4.0.4)
       tilt
     hike (1.2.3)
     i18n (0.6.5)
