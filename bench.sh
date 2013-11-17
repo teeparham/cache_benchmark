@@ -1,0 +1,8 @@
+echo 'No Caching'
+ab -r -n 15 http://127.0.0.1:3000/none | grep ' per request'
+echo 'Russian Doll'
+ab -r -n 15 http://127.0.0.1:3000/russian | grep ' per request'
+echo 'CacheRocket'
+ab -r -n 15 http://127.0.0.1:3000/replace | grep ' per request'
+echo 'CacheRocket - collection'
+ab -r -n 15 http://127.0.0.1:3000/replace_collection | grep ' per request'
