@@ -3,10 +3,13 @@
 <head>
   <title>CacheReplaceBenchmark</title>
   <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag 'pure-min' %>
 </head>
 <body>
 
-<%= yield %>
+<div class='pure-g' style='padding: 25px'>
+  <%= yield %>
+</div>
 
 </body>
 </html>
