@@ -1,7 +1,7 @@
 CacheReplaceBenchmark::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
-  config.cache_classes = false
+  config.cache_classes = true
   
   config.cache_store = :dalli_store
 
