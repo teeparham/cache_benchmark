@@ -1,3 +1,5 @@
+echo 'No Content'
+ab -r -n 15 http://127.0.0.1:3000/monkeys/1 | grep ' per request'
 echo 'No Caching'
 ab -r -n 15 http://127.0.0.1:3000/none | grep ' per request'
 echo 'Russian Doll'
