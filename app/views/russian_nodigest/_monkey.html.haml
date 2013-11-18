@@ -1,11 +1,12 @@
 - rcache(monkey) do
-  = render 'shared/item_header'
-  .pure-u-1-4#link_to_monkey
-    = monkey_button(monkey)
-  .pure-u-1-4#link_to_best_friend
-    = monkey_button(monkey.best_friend)
-  .pure-u-1-2#buttons
-    .sharing_button
-      .typical_stuff
-        = googs_button(monkey)
-        = googs_button(monkey.best_friend)
+  .pure-g{style: 'width:100%; padding:4px'}
+    = render 'shared/item_header'
+    .pure-u-1-4#link_to_monkey
+      = monkey_button(monkey)
+    .pure-u-1-4#link_to_best_friend
+      = monkey_button(monkey.best_friend)
+    .pure-u-1-2#buttons
+      .sharing_button
+        .typical_stuff
+          = googs_button(monkey)
+          = googs_button(monkey.best_friend)
