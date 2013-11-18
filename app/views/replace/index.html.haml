@@ -1,9 +1,9 @@
 %h1 Cache Rocket
 
-%table
-  = render partial: 'shared/header'
+.pure-g{padding: '5px'}
+  = render 'shared/header'
   - @monkeys.each do |monkey|
     = render_cached 'monkey',
     replace: {monkey_button: monkey_button(monkey),
     monkey_friend_button: monkey_button(monkey.best_friend),
-    googs_buttons: googs_button(monkey)+googs_button(monkey.best_friend)}
+    googs_buttons: googs_button(monkey) + googs_button(monkey.best_friend)}

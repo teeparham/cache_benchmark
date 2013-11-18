@@ -1,11 +1,10 @@
-- rcache("replace/monkey") do
-  = render "shared/item_header"
-  %tr
-    %td#link_to_monkey
-      %h4= cache_replace_key :monkey_button
-    %td#link_to_best_friend
-      %h5= cache_replace_key :monkey_friend_button
-    %td#buttons
-      .sharing_button
-        .typical_stuff
-          = cache_replace_key :googs_buttons
+- rcache('replace/monkey') do
+  = render 'shared/item_header'
+  .pure-u-1-4#link_to_monkey
+    = cache_replace_key :monkey_button
+  .pure-u-1-4#link_to_best_friend
+    = cache_replace_key :monkey_friend_button
+  .pure-u-1-2#buttons
+    .sharing_button
+      .typical_stuff
+        = cache_replace_key :googs_buttons

@@ -1,5 +1,5 @@
 %h1 No Caching
 
-%table
-	= render partial: 'shared/header'
-	= render partial: 'monkey', collection: @monkeys
+.pure-g{padding: '5px'}
+  = render 'shared/header'
+  = render partial: 'monkey', collection: @monkeys
