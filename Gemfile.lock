@@ -46,8 +46,11 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    metaclass (0.0.1)
     mime-types (1.25)
     minitest (4.7.5)
+    mocha (0.14.0)
+      metaclass (~> 0.0.1)
     multi_json (1.8.2)
     polyglot (0.3.3)
     rack (1.5.2)
@@ -103,6 +106,7 @@ DEPENDENCIES
   cache_rocket
   dalli
   haml
+  mocha
   rails (~> 4.0.1)
   sqlite3
   unicorn-rails
