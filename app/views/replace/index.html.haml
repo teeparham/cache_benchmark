@@ -2,8 +2,8 @@
 
 .pure-g{padding: '5px'}
   = render 'shared/header'
-  - @monkeys.each do |monkey|
-    = render_cached 'monkey',
-    replace: {monkey_button: monkey_button(monkey),
-    monkey_friend_button: monkey_button(monkey.best_friend),
-    googs_buttons: googs_button(monkey) + googs_button(monkey.best_friend)}
+  - @cats.each do |cat|
+    = render_cached 'cat',
+    replace: {cat_button: cat_button(cat),
+    cat_friend_button: cat_button(cat.best_friend),
+    googs_buttons: googs_button(cat) + googs_button(cat.best_friend)}

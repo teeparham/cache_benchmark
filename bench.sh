@@ -1,5 +1,5 @@
 ab_no_content() {
-  ab -r -n 15 http://127.0.0.1:3000/monkeys/1 | grep -m 1 " per request"
+  ab -r -n 15 http://127.0.0.1:3000/cats/1 | grep -m 1 " per request"
 }
 ab_no_cache() {
   ab -r -n 15 http://127.0.0.1:3000/none | grep -m 1 " per request"

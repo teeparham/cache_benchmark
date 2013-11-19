@@ -4,12 +4,12 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def index
-    load_monkeys
+    load_cats
   end
 
 private
 
-  def load_monkeys
-    @monkeys = Monkey.limit(100)
+  def load_cats
+    @cats = Cat.limit(100)
   end
 end

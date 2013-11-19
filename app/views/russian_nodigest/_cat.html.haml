@@ -1,0 +1,12 @@
+- rcache(cat) do
+  .pure-g{style: 'width:100%; padding:4px'}
+    = render 'shared/item_header'
+    .pure-u-1-4#link_to_cat
+      = cat_button(cat)
+    .pure-u-1-4#link_to_best_friend
+      = cat_button(cat.best_friend)
+    .pure-u-1-2#buttons
+      .sharing_button
+        .typical_stuff
+          = googs_button(cat)
+          = googs_button(cat.best_friend)

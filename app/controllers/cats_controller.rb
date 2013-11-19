@@ -1,4 +1,4 @@
-class MonkeysController < ApplicationController
+class CatsController < ApplicationController
 
   def show
     render text: "go back"

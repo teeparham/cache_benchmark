@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20130818183004) do
 
-  create_table "monkeys", force: true do |t|
+  create_table "cats", force: true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"

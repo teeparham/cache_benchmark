@@ -1,14 +1,14 @@
 module ApplicationHelper
   include CacheRocket
 
-  def monkey_button(monkey)
-    return unless monkey
-    link_to monkey.name, monkey_path(monkey), class: 'pure-button pure-button-primary'
+  def cat_button(cat)
+    return unless cat
+    link_to cat.name, cat_path(cat), class: 'pure-button pure-button-primary'
   end
 
-  def googs_button(monkey)
-    return unless monkey
-		link_to "Search for #{monkey.name}", "http://google.com?q=#{ERB::Util.html_escape(monkey.name)}", class: 'pure-button'
+  def googs_button(cat)
+    return unless cat
+		link_to "Search for #{cat.name}", "http://google.com?q=#{ERB::Util.html_escape(cat.name)}", class: 'pure-button'
   end
 
   def rcache(name = {}, options = nil, &block)
@@ -20,11 +20,11 @@ module ApplicationHelper
     nil
   end
 
-  def replace_monkeys_hash
+  def replace_cats_hash
     {
-      monkey_button:        ->(monkey) { monkey_button(monkey) },
-      monkey_friend_button: ->(monkey) { monkey_button(monkey.best_friend) },
-      googs_buttons:        ->(monkey) { googs_button(monkey) + googs_button(monkey.best_friend) },
+      cat_button:        ->(cat) { cat_button(cat) },
+      cat_friend_button: ->(cat) { cat_button(cat.best_friend) },
+      googs_buttons:     ->(cat) { googs_button(cat) + googs_button(cat.best_friend) },
     }
 
   end
