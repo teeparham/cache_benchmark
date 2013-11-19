@@ -5,4 +5,5 @@ CacheReplaceBenchmark::Application.routes.draw do
   resources :russian, only: [:index]
   resources :russian_nodigest, only: [:index]
   resources :monkeys, only: [:show]
+  resources :stats, only: [:index]
 end
