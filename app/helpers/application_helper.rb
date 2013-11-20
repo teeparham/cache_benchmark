@@ -11,7 +11,7 @@ module ApplicationHelper
 		link_to "Search for #{cat.name}", "http://google.com?q=#{ERB::Util.html_escape(cat.name)}", class: 'pure-button'
   end
 
-  def rcache(name = {}, options = nil, &block)
+  def kache(name = {}, options = nil, &block)
     if controller.perform_caching
       safe_concat(fragment_for(name, options, &block))
     else
