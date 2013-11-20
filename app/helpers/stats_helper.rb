@@ -6,13 +6,13 @@ module StatsHelper
       :get_hits,
       :get_misses,
       :curr_items,
-      :total_items,
-      :evictions,
-      :reclaimed,
       :bytes,
       :limit_maxbytes,
-      :bytes_read,
-      :bytes_written,
+      #:total_items,
+      #:evictions,
+      #:reclaimed,
+      #:bytes_read,
+      #:bytes_written,
     ]
   end
 

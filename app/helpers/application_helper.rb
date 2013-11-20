@@ -26,7 +26,6 @@ module ApplicationHelper
       cat_friend_button: ->(cat) { cat_button(cat.best_friend) },
       googs_buttons:     ->(cat) { googs_button(cat) + googs_button(cat.best_friend) },
     }
-
   end
 
 end
