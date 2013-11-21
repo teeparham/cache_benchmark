@@ -1,6 +1,5 @@
 .bundle
 db/*.sqlite3
 db/*.sqlite3-journal
-bin
 log
 tmp
