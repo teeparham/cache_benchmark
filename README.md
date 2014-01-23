@@ -18,12 +18,15 @@ The `/none` page renders the page with no caching, for reference.
 
 ## Results
 
-### Speed
+### Speed (warm cache)
+
 ```
-No Caching             123 ms
-Russian Doll*           67 ms
-CacheRocket            113 ms
-CacheRocket collection  82 ms
+No Caching             125 ms
+Russian Doll*           66 ms
+CacheRocket            114 ms
+CacheRocket collection  83 ms
+
+* baseline, but content is not cacheable
 ```
 
 ### Efficiency
