@@ -46,7 +46,10 @@ rake db:setup
 
 ### Run Benchmarks
 
+Run these in different terminal tabs:
+
 ```sh
+memcached
+rails s
 source bench.sh
 ```
-
