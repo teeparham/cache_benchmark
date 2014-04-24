@@ -16,15 +16,25 @@ The `/none` page renders the page with no caching, for reference.
 * Cache Rocket
 * Cache Rocket with collection
 
-## Results
+## Anecdotal Results
 
 ### Speed (warm cache)
 
+
 ```
+Rails 4.0
+-----------------------------
 No Caching             125 ms
 Russian Doll*           66 ms
 CacheRocket            114 ms
 CacheRocket collection  83 ms
+
+Rails 4.1
+-----------------------------
+No Caching             118 ms
+Russian Doll*           65 ms
+CacheRocket            111 ms
+CacheRocket collection  80 ms
 
 * baseline, but content is not cacheable
 ```
@@ -33,7 +43,7 @@ CacheRocket collection  83 ms
 ```
                  Hits  Misses
 Russian Doll     1400     100
-CacheRocket        14       1 
+CacheRocket        14       1
 ```
 
 ## Development
