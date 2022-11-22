@@ -37,7 +37,7 @@ GEM
     cache_rocket (0.2.2)
       actionpack (>= 3.2)
     columnize (0.8.9)
-    dalli (2.7.2)
+    dalli (3.2.3)
     debugger-linecache (1.2.0)
     erubis (2.7.0)
     haml (4.0.5)
